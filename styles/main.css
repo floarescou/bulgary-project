@@ -73,7 +73,13 @@ h1 {
     font-size: 90px;
     color: var(--light-text-color);
     opacity: 0.91;
-    text-shadow: 0 0 46px rgba(0, 0, 0, 0.31)
+    text-shadow: 0 0 46px rgba(0, 0, 0, 0.31);
+    text-align: center;
+    letter-spacing: 0.45em;
+}
+h1 span {
+    font-size: 51px;
+    letter-spacing: 0.25em;
 }
 
 h2 {
@@ -114,10 +120,30 @@ h2 {
 
 /*<!--первый экран-->*/
 .hero {
+    position: relative;
     font-weight: 900;
+    background-image: url("../img/hero-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: -moz-linear-gradient( 130deg, rgb(0,0,0) 0%, rgb(0,80,113) 100%);
+    background-image: -webkit-linear-gradient( 130deg, rgb(0,0,0) 0%, rgb(0,80,113) 100%);
+    background-image: -ms-linear-gradient( 130deg, rgb(0,0,0) 0%, rgb(0,80,113) 100%);
+    opacity: 0.69;
 }
 
 .topline {
+    position: relative;
+    z-index: 10;
     background-color: rgba(0, 0, 0, 0.25);
 }
 
@@ -144,6 +170,37 @@ h2 {
 
 .nav__item:hover {
     background-color: rgba(255, 255, 255, 0.141);
+}
+
+.offer {
+    max-width: 770px;
+    margin: 200px auto 0 auto;
+}
+
+.arrow-down {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 45px;
+    height: 45px;
+
+    animation-duration: 1.7s;
+    animation-name: slideUp;
+    animation-timing-function: linear;
+    animation-iteration-count: 3;
+}
+
+@keyframes slideUp {
+    0% {
+        bottom: 100px;
+    }
+    50% {
+        bottom: 75px;
+    }
+    100% {
+        bottom: 100px
+    }
 }
 
 /* .. <!--первый экран-->*/
