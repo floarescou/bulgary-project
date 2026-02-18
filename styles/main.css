@@ -6,12 +6,19 @@
     --light-text-color: #fff;
     --accent-ui-color: #23aae2;
 
+    --footer-text-color: #faf7f7;
+
     --hover-transition: all 0.3s ease;
 }
 
 /* .. переменные*/
 
 /*общие настройки*/
+html,
+body {
+    height: 100%;
+}
+
 *, *:before, *:after {
     margin: 0;
     padding: 0;
@@ -31,6 +38,30 @@ body {
     margin: 0 auto;
 }
 
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*прижатие футера к низу страницы*/
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.main {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex: 0 0 auto;
+}
+
+/* .. прижатие футера к низу страницы*/
+
 /*заголовки*/
 h1, h2 {
     text-transform: uppercase;
@@ -44,10 +75,105 @@ h1 {
     opacity: 0.91;
     text-shadow: 0 0 46px rgba(0, 0, 0, 0.31)
 }
+
 h2 {
     font-size: 42px;
     color: var(--main-font);
 }
+
 /* .. заголовки*/
 
+.hero, .footer {
+    color: var(--light-text-color);
+    background-color: var(--accent-ui-color);
+}
+
+.hero a, .footer a {
+    color: var(--light-text-color);
+}
+
+/*блоки с телефонами, шапка и футер*/
+.phones {
+    font-weight: 900;
+    column-gap: 17px;
+}
+
+.phones__icon {
+    width: 26px;
+    height: 26px;
+}
+
+.phones__links {
+    flex-direction: column;
+    row-gap: 3px;
+}
+
+/* .. блоки с телефонами, шапка и футер*/
+
 /* .. общие настройки*/
+
+/*<!--первый экран-->*/
+.hero {
+    font-weight: 900;
+}
+
+.topline {
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.topline__logo {
+    padding: 8px 0;
+    background-color: var(--accent-ui-color);
+}
+
+.topline__logo img {
+    opacity: 0.55;
+}
+
+.nav__item {
+    cursor: pointer;
+    font-size: 11px;
+    text-transform: uppercase;
+    padding: 10px 12px;
+
+    border-radius: 3px;
+    background-color: transparent;
+
+    transition: var(--hover-transition);
+}
+
+.nav__item:hover {
+    background-color: rgba(255, 255, 255, 0.141);
+}
+
+/* .. <!--первый экран-->*/
+
+
+/*<!--подвал сайта-->*/
+.footer {
+    padding: 11px 0;
+}
+
+.footer__credits {
+    font-size: 14px;
+    color: var(--footer-text-color);
+    column-gap: 120px;
+}
+.footer__rights, .footer__agreement {
+    opacity: 0.76;
+}
+
+.footer__agreement {
+    cursor: pointer;
+    border-bottom: 1px dotted var(--footer-text-color);
+
+    transition: var(--hover-transition);
+}
+
+.footer__agreement:hover {
+   color: var(--light-text-color);
+    border-bottom-color: var(--light-text-color);
+    opacity: 1;
+}
+/* .. <!--подвал сайта-->*/
+
