@@ -63,10 +63,11 @@ body {
 /* .. прижатие футера к низу страницы*/
 
 /*заголовки*/
-h1, h2 {
+h1, h2, h3 {
     text-transform: uppercase;
     line-height: 1;
     text-align: center;
+    font-weight: 900;
 }
 
 h1 {
@@ -77,6 +78,7 @@ h1 {
     text-align: center;
     letter-spacing: 0.45em;
 }
+
 h1 span {
     font-size: 51px;
     letter-spacing: 0.25em;
@@ -85,11 +87,34 @@ h1 span {
 h2 {
     font-size: 42px;
     color: var(--main-font);
+    letter-spacing: 0.1em;
 }
 
 /* .. заголовки*/
 
-.hero, .footer {
+.btn {
+    border: 2px solid transparent;
+    border-radius: 4px;
+    width: 216px;
+    height: 62px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 900;
+    padding: 23px 25px;
+    line-height: 1;
+}
+
+.light-btn {
+    color: var(--light-text-color);
+    border-color: var(--light-text-color);
+}
+
+.accent-btn {
+    color: var(--accent-ui-color);
+    border-color: var(--accent-ui-color);
+}
+
+.hero, .footer, .moving-offer {
     color: var(--light-text-color);
     background-color: var(--accent-ui-color);
 }
@@ -117,17 +142,21 @@ h2 {
 /* .. блоки с телефонами, шапка и футер*/
 
 /* .. общие настройки*/
-
-/*<!--первый экран-->*/
-.hero {
+.hero, .moving-offer {
     position: relative;
-    font-weight: 900;
-    background-image: url("../img/hero-bg.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+
+/*<!--первый экран-->*/
+.hero {
+    font-weight: 900;
+    background-image: url("../img/hero-bg.png");
     height: 100vh;
 }
+
 .hero::before {
     content: '';
     position: absolute;
@@ -135,9 +164,9 @@ h2 {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: -moz-linear-gradient( 130deg, rgb(0,0,0) 0%, rgb(0,80,113) 100%);
-    background-image: -webkit-linear-gradient( 130deg, rgb(0,0,0) 0%, rgb(0,80,113) 100%);
-    background-image: -ms-linear-gradient( 130deg, rgb(0,0,0) 0%, rgb(0,80,113) 100%);
+    background-image: -moz-linear-gradient(130deg, rgb(0, 0, 0) 0%, rgb(0, 80, 113) 100%);
+    background-image: -webkit-linear-gradient(130deg, rgb(0, 0, 0) 0%, rgb(0, 80, 113) 100%);
+    background-image: -ms-linear-gradient(130deg, rgb(0, 0, 0) 0%, rgb(0, 80, 113) 100%);
     opacity: 0.69;
 }
 
@@ -205,6 +234,178 @@ h2 {
 
 /* .. <!--первый экран-->*/
 
+/*<!--секция 'преимущества'-->*/
+.advantages {
+    padding: 89px 0 97px 0;
+}
+
+.advantages__title {
+    margin-bottom: 63px;
+}
+
+.advantages__list {
+    align-items: flex-start;
+    column-gap: 28px;
+    flex-wrap: wrap;
+}
+
+.advantages__item {
+    max-width: 370px;
+    text-align: center;
+    background-color: #f4f4f4;
+    box-shadow: 1px 1.732px 4px 0px rgba(149, 147, 147, 0.33);
+
+    padding: 56px 30px 59px 30px;
+}
+
+.advantages__icon {
+    position: relative;
+    height: 78px;
+    margin-bottom: 27px;
+}
+
+.advantages__icon img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.advantages__list-heading {
+    font-size: 20px;
+    margin-bottom: 19px;
+}
+
+.advantages__list-heading::after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 38px;
+    background-color: var(--main-text-color);
+    opacity: 0.19;
+    margin: 16px auto 0 auto;
+}
+
+.advantages__description {
+    height: 80px;
+    font-size: 17px;
+    opacity: 0.8;
+    line-height: 1.294;
+    text-align: center;
+}
+
+/* .. <!--секция 'преимущества'-->*/
+
+/*<!--секция 'переезд в болгарию'-->*/
+.moving-offer {
+    padding: 95px 0 99px 0;
+    background-image: url("../img/moving-bg.png");
+}
+
+.moving-offer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #0e2a41;
+    opacity: 0.859;
+}
+
+.moving-wrapper {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+}
+
+.moving-offer__header {
+    margin-bottom: 57px;
+    text-align: center;
+}
+
+.moving-offer__title {
+    margin-bottom: 29px;
+}
+
+.moving-offer__quote {
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.blockquote__quote {
+    margin-bottom: 17px;
+}
+
+.blockquote__text {
+    font-size: 18px;
+    font-style: italic;
+    line-height: 1.444;
+}
+.blockquote__author {
+    font-size: 14px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.moving-offer__question {
+    max-width: 770px;
+    margin: 0 auto;
+    border: 1px dashed var(--light-text-color);
+    padding: 60px;
+    position: relative;
+}
+
+.moving-offer__question::before, .moving-offer__question::after {
+    content: '';
+    display: block;
+    width: 33px;
+    height: 33px;
+    background-image: url("../img/icons/question-icon.png");
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.moving-offer__question::before {
+    top: -17px;
+}
+.moving-offer__question::after {
+    bottom: -17px;
+}
+
+.moving-offer__text {
+    max-width: 665px;
+    font-size: 19px;
+    text-transform: uppercase;
+    line-height: 1.842;
+    text-align: center;
+}
+
+.moving-offer__text_main {
+    font-weight: 900;
+    font-size: 23px;
+}
+
+.moving-offer__answer {
+    margin-top: 71px;
+}
+
+.moving-offer__answer-text {
+    margin-bottom: 48px;
+}
+
+.moving-offer__heading {
+    font-size: 37px;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.moving-offer__desc {
+    font-size: 18px;
+}
+/* .. <!--секция 'переезд в болгарию'-->*/
 
 /*<!--подвал сайта-->*/
 .footer {
@@ -216,6 +417,7 @@ h2 {
     color: var(--footer-text-color);
     column-gap: 120px;
 }
+
 .footer__rights, .footer__agreement {
     opacity: 0.76;
 }
@@ -228,9 +430,10 @@ h2 {
 }
 
 .footer__agreement:hover {
-   color: var(--light-text-color);
+    color: var(--light-text-color);
     border-bottom-color: var(--light-text-color);
     opacity: 1;
 }
+
 /* .. <!--подвал сайта-->*/
 
