@@ -1,7 +1,14 @@
 /*переменные*/
 :root {
-    
+    --main-font: "Museo Sans", sans-serif;
+
+    --main-text-color: #000;
+    --light-text-color: #fff;
+    --accent-ui-color: #23aae2;
+
+    --hover-transition: all 0.3s ease;
 }
+
 /* .. переменные*/
 
 /*общие настройки*/
@@ -12,6 +19,35 @@
 }
 
 body {
-
+    font-family: var(--main-font);
+    font-weight: 100;
+    font-style: normal;
+    font-size: 15px;
 }
+
+.container {
+    max-width: 1230px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+/*заголовки*/
+h1, h2 {
+    text-transform: uppercase;
+    line-height: 1;
+    text-align: center;
+}
+
+h1 {
+    font-size: 90px;
+    color: var(--light-text-color);
+    opacity: 0.91;
+    text-shadow: 0 0 46px rgba(0, 0, 0, 0.31)
+}
+h2 {
+    font-size: 42px;
+    color: var(--main-font);
+}
+/* .. заголовки*/
+
 /* .. общие настройки*/
