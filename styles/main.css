@@ -573,6 +573,7 @@ h3.slider__author {
 /*<!--подвал сайта-->*/
 .footer {
     padding: 11px 0;
+    box-shadow: 0 13px 131px 0 rgba(0, 0, 0, 0.26);
 }
 
 .footer__credits {
@@ -599,4 +600,5 @@ h3.slider__author {
 }
 
 /* .. <!--подвал сайта-->*/
+
 
