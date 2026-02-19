@@ -7,6 +7,7 @@
     --accent-ui-color: #23aae2;
 
     --footer-text-color: #faf7f7;
+    --pages-section-bg: #f7f7f7;
 
     --hover-transition: all 0.3s ease;
 }
@@ -84,6 +85,12 @@ h1 span {
     letter-spacing: 0.25em;
 }
 
+h1.pages-html__offer__title {
+    font-size: 51px;
+    line-height: 1;
+    letter-spacing: 0.25em;
+}
+
 h2 {
     font-size: 42px;
     color: var(--main-font);
@@ -139,9 +146,23 @@ h2 {
     row-gap: 3px;
 }
 
-/* .. блоки с телефонами, шапка и футер*/
+.pages-html__phone__links {
+    margin-top: 3px;
+}
 
-/* .. общие настройки*/
+.pages-html__phone__links::after {
+    content: '';
+    display: block;
+    width: 0;
+    border-bottom: 1px dashed var(--light-text-color);
+    transition: var(--hover-transition)
+}
+
+.pages-html__phone__links:hover::after {
+    width: 100%;
+}
+
+/* .. блоки с телефонами, шапка и футер*/
 .hero, .moving-offer {
     position: relative;
     background-size: cover;
@@ -149,11 +170,16 @@ h2 {
     background-position: center;
 }
 
+/* .. общие настройки*/
 
 /*<!--первый экран-->*/
 .hero {
     font-weight: 900;
     background-image: url("../img/hero-bg.png");
+    padding-bottom: 125px;
+}
+
+.main-hero {
     height: 100vh;
 }
 
@@ -206,14 +232,25 @@ h2 {
     margin: 200px auto 0 auto;
 }
 
+.pages-html__offer {
+    max-width: 100%;
+    margin: 85px auto 0 auto;
+}
+
 .arrow-down {
+    position: relative;
+    margin: 40px auto 0 auto;
+    width: 45px;
+    height: 45px;
+
+
+}
+
+.main-arrow-down {
     position: absolute;
     bottom: 100px;
     left: 50%;
     transform: translateX(-50%);
-    width: 45px;
-    height: 45px;
-
     animation-duration: 1.7s;
     animation-name: slideUp;
     animation-timing-function: linear;
@@ -497,6 +534,7 @@ h2 {
 .review {
     padding: 89px 0;
 }
+
 .review__title {
     margin-bottom: 68px;
 }
@@ -510,6 +548,7 @@ h2 {
 
     /*height: 205px;*/
 }
+
 .slider__image {
     border-radius: 50px;
     overflow: hidden;
@@ -534,19 +573,23 @@ h3.slider__author {
     color: var(--accent-ui-color);
     font-size: 12px;
 }
+
 .slider__link {
     border-bottom: 1px solid var(--accent-ui-color);
     font-weight: 900;
 }
+
 .slider__direction {
     font-size: 12px;
 }
+
 .slider__text {
     font-size: 14px;
     color: #363636;
     font-style: italic;
     line-height: 1.429;
 }
+
 .bullets {
     width: 78px;
     margin: 51px auto 0 auto;
@@ -555,6 +598,7 @@ h3.slider__author {
 .slider__bullets {
     column-gap: 10px;
 }
+
 .slider__bullet {
     width: 19px;
     height: 19px;
@@ -567,6 +611,7 @@ h3.slider__author {
     border: 1px solid var(--accent-ui-color);
     background-color: var(--accent-ui-color);
 }
+
 /* .. <!--секция 'отзывы'-->*/
 
 /*<!--секция 'запись на консультацию'--*/
@@ -577,9 +622,11 @@ h3.slider__author {
     background-repeat: no-repeat;
     background-position: center;
 }
+
 .consultation__header {
     margin-bottom: 30px;
 }
+
 .consultation__title {
     line-height: 1.2;
     margin-bottom: 27px;
@@ -593,6 +640,10 @@ h3.slider__author {
     margin: 0 auto;
     line-height: 1.4;
     letter-spacing: 0.05em;
+}
+
+.about-html__consultation__text {
+    max-width: 330px;
 }
 
 .consultatiion__decor {
@@ -610,10 +661,12 @@ form.consultation__form {
     justify-content: center;
     align-items: center;
 }
+
 form input {
     border: 1px solid var(--light-text-color);
     border-radius: 3px;
     background-color: var(--accent-ui-color);
+    font-weight: 300;
     width: 370px;
     height: 67px;
     font-size: 13px;
@@ -623,6 +676,7 @@ form input {
 }
 
 form input::placeholder {
+    font-weight: 100;
     color: var(--light-text-color);
     opacity: 0.56;
     transition: var(--hover-transition);
@@ -635,14 +689,15 @@ form input:hover {
 form input:hover::placeholder {
     opacity: 1;
 }
+
 button.consultation-btn {
     width: 370px;
+    margin-top: 11px;
 }
+
 /* .. форма*/
 
 /* .. <!--секция 'запись на консультацию'--*/
-
-
 
 /*<!--подвал сайта-->*/
 .footer {
@@ -674,5 +729,156 @@ button.consultation-btn {
 }
 
 /* .. <!--подвал сайта-->*/
+
+/*остальные страницы*/
+.container-inner-about {
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 65px;
+}
+
+.container-inner-move {
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 45px;
+}
+
+.page-block {
+    background-color: var(--pages-section-bg);
+    /*padding-bottom: 85px;*/
+    position: relative;
+
+    height: 100%;
+}
+
+.page-block__content {
+    background-color: var(--light-text-color);
+    box-shadow: 0 3px 1px 0 rgba(159, 160, 160, 0.18);
+    position: absolute;
+    top: -85px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1030px;
+}
+
+.page-block__content_about {
+    padding: 50px 0 75px 0;
+}
+
+.page-block__desc {
+    font-size: 18px;
+    line-height: 1.389;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.page-block__desc span {
+    font-weight: 900;
+}
+
+.page-block__banner {
+    text-transform: uppercase;
+    justify-content: space-evenly;
+    margin-bottom: 58px;
+}
+
+.block-page__cta {
+    font-weight: 900;
+    letter-spacing: 0.05em;
+}
+
+.block-page__cta-bottom {
+    font-size: 30px;
+}
+
+.page-block__text_main {
+    color: var(--accent-ui-color);
+}
+
+.page-block__text_main-top {
+    font-size: 39px;
+    letter-spacing: 0.07em;
+    margin-top: -5px;
+    margin-bottom: 5px;
+}
+
+.page-block__extra {
+    font-size: 19px;
+    color: #BDBDBD;
+    letter-spacing: 0.55em;
+}
+
+.page-block__text_addition-bottom {
+    letter-spacing: 0.07em;
+}
+
+.page-block__question {
+    background-color: var(--accent-ui-color);
+    color: var(--light-text-color);
+    height: 76px;
+    line-height: 76px;
+    font-size: 23px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 900;
+    margin-bottom: 60px;
+}
+
+h3.page-block__header {
+    font-size: 29px;
+    opacity: 0.98;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.partners {
+    align-items: flex-start;
+}
+
+.partners__partner {
+    background-color: #f4f4f4;
+    box-shadow: 1px 1.732px 4px 0 rgba(149, 147, 147, 0.33);
+    padding: 37px 34px 42px 34px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.8);
+    line-height: 1.438;
+    text-align: justify;
+    max-width: 435px;
+
+}
+
+.partners__img {
+    width: 134px;
+    height: 134px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.partners__name {
+    margin-top: 30px;
+    margin-bottom: 23px;
+    text-align: center;
+    font-size: 21px;;
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+}
+
+.partners__name::after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 37px;
+    background-color: #c6c6c6;
+    margin: 13px auto 0 auto;
+}
+
+
+.partners__quote {
+    height: 225px;
+    overflow-y: hidden;
+}
+
+/* .. остальные страницы*/
 
 
