@@ -342,6 +342,7 @@ h2 {
     font-style: italic;
     line-height: 1.444;
 }
+
 .blockquote__author {
     font-size: 14px;
     font-weight: 900;
@@ -370,6 +371,7 @@ h2 {
 .moving-offer__question::before {
     top: -17px;
 }
+
 .moving-offer__question::after {
     bottom: -17px;
 }
@@ -405,7 +407,168 @@ h2 {
 .moving-offer__desc {
     font-size: 18px;
 }
+
 /* .. <!--секция 'переезд в болгарию'-->*/
+
+/*<!--секция 'недвижимость'-->*/
+.estate-offer {
+    padding: 108px 0 98px 0;
+    background-image: url("../img/estate-bg.png");
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.estate__content {
+    position: relative;
+    max-width: 770px;
+    margin: 151px auto 60px auto;
+}
+
+.estate__content::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-image: url("../img/icons/estate-decor.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    bottom: 142px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.estate__images-01, .estate__images-02, .estate__images-03 {
+    position: absolute;
+    transform: translateX(-50%);
+}
+
+.estate__images-01 {
+    top: -125px;
+    left: 51%;
+}
+
+.estate__images-02 {
+    left: 38%;
+    top: -74px;
+    z-index: -5;
+}
+
+.estate__images-03 {
+    left: 60%;
+    top: -55px;
+    z-index: -5;
+}
+
+.text-block {
+    background-color: #f4f4f4;
+    box-shadow: 1px 1.732px 4px 0px rgba(149, 147, 147, 0.33);
+}
+
+.text-block + .text-block {
+    margin-top: 6px;
+}
+
+.text-block__title {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.text-block__text {
+    font-size: 17px;
+    line-height: 1.25;
+}
+
+.text-block_top {
+    padding: 71px 35px 43px 35px;
+}
+
+.text-block_bottom {
+    padding: 44px 35px 39px 35px;
+}
+
+/* .. <!--секция 'недвижимость'-->*/
+
+/*<!--секция 'отзывы'-->*/
+.review {
+    padding: 89px 0;
+}
+.review__title {
+    margin-bottom: 68px;
+}
+
+.slider__slide {
+    background-color: var(--light-text-color);
+    box-shadow: 1px 1.732px 4px 0 rgba(149, 147, 147, 0.33);
+    max-width: 765px;
+    position: relative;
+    padding: 44px 40px 46px 127px;
+
+    /*height: 205px;*/
+}
+.slider__image {
+    border-radius: 50px;
+    overflow: hidden;
+    width: 132px;
+    height: 132px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -62px;
+}
+
+.slider__info {
+    text-transform: uppercase;
+    margin-bottom: 27px;
+}
+
+h3.slider__author {
+    font-size: 16px;
+}
+
+.slider__link, .slider__direction {
+    color: var(--accent-ui-color);
+    font-size: 12px;
+}
+.slider__link {
+    border-bottom: 1px solid var(--accent-ui-color);
+    font-weight: 900;
+}
+.slider__direction {
+    font-size: 12px;
+}
+.slider__text {
+    font-size: 14px;
+    color: #363636;
+    font-style: italic;
+    line-height: 1.429;
+}
+.bullets {
+    width: 78px;
+    margin: 51px auto 0 auto;
+}
+
+.slider__bullets {
+    column-gap: 10px;
+}
+.slider__bullet {
+    width: 19px;
+    height: 19px;
+    border: 1px dashed var(--accent-ui-color);
+    border-radius: 50%;
+    transition: var(--hover-transition);
+}
+
+.slider__bullet:hover {
+    border: 1px solid var(--accent-ui-color);
+    background-color: var(--accent-ui-color);
+}
+/* .. <!--секция 'отзывы'-->*/
+
 
 /*<!--подвал сайта-->*/
 .footer {
