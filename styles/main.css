@@ -114,7 +114,7 @@ h2 {
     border-color: var(--accent-ui-color);
 }
 
-.hero, .footer, .moving-offer {
+.hero, .footer, .moving-offer, .consultation {
     color: var(--light-text-color);
     background-color: var(--accent-ui-color);
 }
@@ -568,6 +568,80 @@ h3.slider__author {
     background-color: var(--accent-ui-color);
 }
 /* .. <!--секция 'отзывы'-->*/
+
+/*<!--секция 'запись на консультацию'--*/
+.consultation {
+    padding: 84px 0;
+    background-image: url("../img/consultation-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.consultation__header {
+    margin-bottom: 30px;
+}
+.consultation__title {
+    line-height: 1.2;
+    margin-bottom: 27px;
+}
+
+.consultation__text {
+    font-size: 21px;
+    text-transform: uppercase;
+    text-align: center;
+    max-width: 300px;
+    margin: 0 auto;
+    line-height: 1.4;
+    letter-spacing: 0.05em;
+}
+
+.consultatiion__decor {
+    width: 33px;
+    height: 33px;
+    margin: 35px auto 0 auto;
+}
+
+/*форма*/
+form.consultation__form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 9px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+form input {
+    border: 1px solid var(--light-text-color);
+    border-radius: 3px;
+    background-color: var(--accent-ui-color);
+    width: 370px;
+    height: 67px;
+    font-size: 13px;
+    text-transform: uppercase;
+    padding: 35px;
+    transition: var(--hover-transition);
+}
+
+form input::placeholder {
+    color: var(--light-text-color);
+    opacity: 0.56;
+    transition: var(--hover-transition);
+}
+
+form input:hover {
+    box-shadow: 0px 0px 35px 0px rgba(14, 14, 14, 0.3);
+}
+
+form input:hover::placeholder {
+    opacity: 1;
+}
+button.consultation-btn {
+    width: 370px;
+}
+/* .. форма*/
+
+/* .. <!--секция 'запись на консультацию'--*/
+
 
 
 /*<!--подвал сайта-->*/

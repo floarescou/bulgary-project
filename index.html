@@ -243,7 +243,35 @@
         <!-- .. секция 'отзывы'-->
 
         <!--секция 'запись на консультацию'-->
-        <section class="consultation"></section>
+        <section class="consultation">
+            <div class="container">
+                <div class="consultation__header">
+                    <h2 class="consultation__title">
+                        Есть вопросы <br> по переезду в болгарию?
+                    </h2>
+                    <p class="consultation__text">
+                        Мы проконсультируем
+                        Вас бесплатно!
+                    </p>
+                    <div class="consultatiion__decor">
+                        <img src="img/icons/consultation-icon.png" alt="записаться на консультацию">
+                    </div>
+                </div>
+
+                <form action="" method="post" class="form consultation__form">
+                    <label for="name">
+                        <input type="text" name="name" id="name" placeholder="Имя" autocomplete="off" required>
+                    </label>
+                    <label for="email">
+                        <input type="email" name="email" id="email" placeholder="E-mail" autocomplete="off" required>
+                    </label>
+                    <label for="tel">
+                        <input type="tel" name="tel" id="tel" placeholder="Телефон" autocomplete="off" required>
+                    </label>
+                    <button type="button" class="btn light-btn consultation-btn">Заказать консультацию</button>
+                </form>
+            </div>
+        </section>
         <!-- .. секция 'запись на консультацию'-->
     </div>
     <!-- .. контент страницы-->
