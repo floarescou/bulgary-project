@@ -745,10 +745,7 @@ button.consultation-btn {
 
 .page-block {
     background-color: var(--pages-section-bg);
-    /*padding-bottom: 85px;*/
     position: relative;
-
-    /*height: 100%;*/
 }
 .page-block__about {
     height: 1110px;
@@ -756,6 +753,9 @@ button.consultation-btn {
 
 .page-block__move {
     height: 682px;
+}
+.page-block__contacts {
+    height: 656px;
 }
 
 .page-block__content {
@@ -770,6 +770,10 @@ button.consultation-btn {
 
 .page-block__content_about {
     padding: 50px 0 75px 0;
+}
+
+.page-block__content_contacts {
+    padding: 50px 0 62px 0;
 }
 
 .page-block__desc {
@@ -838,9 +842,6 @@ h3.page-block__header {
     margin-bottom: 50px;
 }
 
-
-
-
 .page-block__move-wrapper {
     justify-content: space-evenly;
     column-gap: 20px;
@@ -862,9 +863,38 @@ h3.page-block__header {
     line-height: 1.438;
 }
 
+.block-page__block_form {
+    width: 389px;
+    background-color: var(--accent-ui-color);
+    padding: 44px 22px;
+    color: var(--light-text-color);
+    border-radius: 3px;
+}
 
+h2.page-block__consultation__title {
+    font-size: 25px;
+    margin-bottom: 17px;
+}
+h2.page-block__consultation__title span {
+    font-size: 20px;
+}
+.page-block__consultation__text {
+    font-size: 18px;
+    width: 258px;
+}
 
+form input.page-block__input, button.page-block__consultation-btn {
+    width: 292px;
+    height: 53px;
+    padding: 19px;
+}
+form input.page-block__input {
+    background-color: #30c2ff;
+}
 
+button.page-block__consultation-btn {
+    font-size: 13px;
+}
 .partners {
     align-items: flex-start;
 }
@@ -909,6 +939,37 @@ h3.page-block__header {
 .partners__quote {
     height: 225px;
     overflow-y: hidden;
+}
+
+.contacts__icon {
+    width: 32px;
+}
+
+.contacts__item {
+    align-items: flex-start;
+    justify-content: flex-start;
+    column-gap: 18px;
+}
+
+.contacts__item + .contacts__item {
+    margin-top: 50px;
+}
+
+.contacts__title {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-bottom: 16px;
+    line-height: 1;
+}
+
+.contacts__contact {
+    line-height: 1;
+    font-size: 16px;
+}
+
+.contacts__contact + .contacts__contact {
+    margin-top: 6px;
 }
 
 /* .. остальные страницы*/
