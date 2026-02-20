@@ -1,3 +1,101 @@
 @media screen and (max-width: 1024px) {
 
 }
+
+/* === главная страница и общие настройки страниц === */
+@media screen and (max-width: 880px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    nav.nav {
+        display: none;
+    }
+
+    .topline__phones {
+        margin-right: 59px;
+    }
+
+    .burger-icon {
+        display: block;
+        position: absolute;
+        top: 25px;
+        right: 27px;
+    }
+
+    h1 {
+        font-size: 64px;
+    }
+
+    h1 span {
+        font-size: 44px;
+    }
+}
+
+/*---------------------------------------------------*/
+@media screen and (max-width: 620px) {
+    h1 {
+        font-size: 55px;
+    }
+
+    h1 span {
+        font-size: 37px;
+    }
+}
+@media screen and (max-width: 540px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    h1 span {
+        font-size: 33px;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .topline__phones {
+        display: none;
+    }
+
+    h1 {
+        font-size: 47px;
+    }
+
+    .main-arrow-down {
+        bottom: 65px;
+    }
+    @keyframes slideUp {
+        0% {
+            bottom: 65px;
+        }
+        50% {
+            bottom: 40px;
+        }
+        100% {
+            bottom: 65px
+        }
+    }
+}
+
+@media screen and (max-width: 455px) {
+    h1 {
+        letter-spacing: 0.25em;
+    }
+
+    h1 span {
+        letter-spacing: 0.05em;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    h1 {
+        font-size: 39px;
+    }
+
+    h1 span {
+        font-size: 25px;
+    }
+}
+
+/* .. === главная страница и общие настройки страниц === */
