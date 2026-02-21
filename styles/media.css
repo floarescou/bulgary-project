@@ -2,6 +2,33 @@
 
 }
 
+@media screen and (max-width: 1226px) {
+    .advantages__list {
+        column-gap: 20px;
+        row-gap: 21px;
+    }
+
+    .advantages__item {
+        max-width: 352px;
+    }
+}
+
+@media screen and (max-width: 1156px) {
+    .advantages__list {
+        justify-content: center;
+    }
+
+    .advantages__item:last-child {
+        max-width: 724px;
+        width: 724px;
+    }
+
+    .advantages__description_last {
+        width: 306px;
+        margin: 0 auto;
+    }
+}
+
 /* === главная страница и общие настройки страниц === */
 @media screen and (max-width: 880px) {
     .container {
@@ -30,6 +57,28 @@
     h1 span {
         font-size: 44px;
     }
+
+    /*.advantages__item:last-child {*/
+    /*    max-width: 100%;*/
+    /*    width: 100%;*/
+    /*}*/
+}
+
+@media screen and (max-width: 764px) {
+    .advantages__item {
+        width: 455px;
+        max-width: 455px;
+    }
+
+    .advantages__item:last-child {
+        max-width: 455px;
+        width: 455px;
+    }
+
+    .advantages__description {
+        width: 306px;
+        margin: 0 auto;
+    }
 }
 
 /*---------------------------------------------------*/
@@ -42,6 +91,17 @@
         font-size: 37px;
     }
 }
+
+@media screen and (max-width: 615px) {
+    .advantages {
+        padding: 69px 0 90px 0;
+    }
+
+    .advantages__title {
+        margin-bottom: 30px;
+    }
+}
+
 @media screen and (max-width: 540px) {
     h1 {
         font-size: 50px;
@@ -65,6 +125,7 @@
     .main-arrow-down {
         bottom: 65px;
     }
+
     @keyframes slideUp {
         0% {
             bottom: 65px;
@@ -75,6 +136,29 @@
         100% {
             bottom: 65px
         }
+    }
+    .advantages__list {
+        row-gap: 15px;
+    }
+
+    .moving-offer {
+        padding: 89px 0 86px 0;
+        background-image: none;
+        background-color: rgba(0, 0, 0, 0.53);
+    }
+
+    .moving-offer__header {
+        margin-bottom: 50px;
+    }
+
+    .moving-offer__title {
+        margin-bottom: 43px;
+        line-height: 1.286;
+    }
+
+    .blockquote__text {
+        max-width: 386px;
+        margin: 0 auto;
     }
 }
 
@@ -88,6 +172,31 @@
     }
 }
 
+@media screen and (max-width: 445px) {
+    h2 {
+        font-size: 28px;
+    }
+
+    .advantages__item {
+        width: 300px;
+        max-width: 300px;
+    }
+
+    .advantages__item:last-child {
+        width: 300px;
+        max-width: 300px;
+    }
+
+    .advantages__description {
+        width: 230px;
+        height: 100%;
+    }
+
+    .moving-offer {
+        padding: 69px 0 90px 0;
+    }
+}
+
 @media screen and (max-width: 375px) {
     h1 {
         font-size: 39px;
@@ -96,6 +205,35 @@
     h1 span {
         font-size: 25px;
     }
+
+    .moving-offer__title {
+        margin-bottom: 30px;
+    }
+
+    .blockquote__quote {
+        margin-bottom: 10px;
+    }
+
+    .blockquote__text {
+        font-size: 15px;
+    }
+
+    .blockquote__author {
+        font-size: 13px;
+    }
+
+    .moving-offer__question {
+        padding: 38px;
+    }
+
+    .moving-offer__heading {
+        font-size: 30px;
+    }
+
+    .moving-offer__answer-text {
+        margin-bottom: 40px;
+    }
 }
+
 
 /* .. === главная страница и общие настройки страниц === */
