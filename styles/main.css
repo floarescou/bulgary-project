@@ -20,39 +20,47 @@
 html, body {
     height: 100%;
 }
+
 *, *:before, *:after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: var(--main-font);
     font-weight: 100;
     font-style: normal;
     font-size: 15px;
 }
+
 .flex {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 /*контейнеры*/
 .container {
     max-width: 1230px;
     padding: 0 30px;
     margin: 0 auto;
 }
+
 /*контейнеры страниц*/
 .container-inner-basic, .container-inner-extra {
     margin: 0 auto;
     text-align: center;
 }
+
 .container-inner-basic {
     padding: 0 65px;
 }
+
 .container-inner-extra {
     padding: 0 45px;
 }
+
 /* .. контейнеры страниц*/
 /* .. контейнеры*/
 
@@ -62,12 +70,15 @@ body {
     flex-direction: column;
     height: 100%;
 }
+
 .main {
     flex: 1 0 auto;
 }
+
 .footer {
     flex: 0 0 auto;
 }
+
 /* .. прижатие футера к низу страницы*/
 
 /*заголовки*/
@@ -77,6 +88,7 @@ h1, h2, h3 {
     text-align: center;
     font-weight: 900;
 }
+
 h1 {
     font-size: 90px;
     color: var(--light-text-color);
@@ -85,20 +97,24 @@ h1 {
     text-align: center;
     letter-spacing: 0.45em;
 }
+
 h1 span {
     font-size: 51px;
     letter-spacing: 0.25em;
 }
+
 h1.pages-html__offer__title {
     font-size: 51px;
     line-height: 1;
     letter-spacing: 0.25em;
 }
+
 h2 {
     font-size: 42px;
     color: var(--main-font);
     letter-spacing: 0.1em;
 }
+
 /* .. заголовки*/
 
 /*кнопки*/
@@ -113,14 +129,17 @@ h2 {
     padding: 23px 25px;
     line-height: 1;
 }
+
 .light-btn {
     color: var(--light-text-color);
     border-color: var(--light-text-color);
 }
+
 .accent-btn {
     color: var(--accent-ui-color);
     border-color: var(--accent-ui-color);
 }
+
 /* .. кнопки*/
 
 /*фон, цвет текста и ссылок для секций*/
@@ -128,15 +147,18 @@ h2 {
     color: var(--light-text-color);
     background-color: var(--accent-ui-color);
 }
+
 .hero, .moving-offer {
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
+
 .hero a, .footer a {
     color: var(--light-text-color);
 }
+
 /* .. фон, цвет текста и ссылок для секций*/
 
 /*блоки с телефонами в шапке и футере*/
@@ -144,17 +166,21 @@ h2 {
     font-weight: 900;
     column-gap: 17px;
 }
+
 .phones__icon {
     width: 26px;
     height: 26px;
 }
+
 .phones__links {
     flex-direction: column;
     row-gap: 3px;
 }
+
 .pages-html__phone__links {
     margin-top: 3px;
 }
+
 .pages-html__phone__links::after {
     content: '';
     display: block;
@@ -162,9 +188,11 @@ h2 {
     border-bottom: 1px dashed var(--light-text-color);
     transition: var(--hover-transition)
 }
+
 .pages-html__phone__links:hover::after {
     width: 100%;
 }
+
 /* .. блоки с телефонами в шапке и футере*/
 /* .. === общие настройки === */
 
@@ -175,6 +203,7 @@ h2 {
     background-image: url("../img/hero-bg.png");
     padding-bottom: 125px;
 }
+
 .hero::before {
     content: '';
     position: absolute;
@@ -187,9 +216,11 @@ h2 {
     background-image: -ms-linear-gradient(130deg, rgb(0, 0, 0) 0%, rgb(0, 80, 113) 100%);
     opacity: 0.69;
 }
+
 .main-hero {
     height: 100vh;
 }
+
 /* .. общие настройки*/
 /*шапка сайта*/
 .topline {
@@ -197,13 +228,16 @@ h2 {
     z-index: 10;
     background-color: rgba(0, 0, 0, 0.25);
 }
+
 .topline__logo {
     padding: 8px 0;
     background-color: var(--accent-ui-color);
 }
+
 .topline__logo img {
     opacity: 0.55;
 }
+
 /* .. шапка сайта*/
 /*главная навигация*/
 .nav__item {
@@ -217,19 +251,23 @@ h2 {
 
     transition: var(--hover-transition);
 }
+
 .nav__item:hover {
     background-color: rgba(255, 255, 255, 0.141);
 }
+
 /* .. главная навигация*/
 /*блок главного заголовка страницы*/
 .offer {
     max-width: 770px;
     margin: 200px auto 0 auto;
 }
+
 .pages-html__offer {
     max-width: 100%;
     margin: 85px auto 0 auto;
 }
+
 /* .. блок главного заголовка страницы*/
 /*стрелка вниз + анимация*/
 .arrow-down {
@@ -238,6 +276,7 @@ h2 {
     width: 45px;
     height: 45px;
 }
+
 .main-arrow-down {
     position: absolute;
     bottom: 100px;
@@ -248,6 +287,7 @@ h2 {
     animation-timing-function: linear;
     animation-iteration-count: 3;
 }
+
 @keyframes slideUp {
     0% {
         bottom: 100px;
@@ -259,6 +299,7 @@ h2 {
         bottom: 100px
     }
 }
+
 /* .. стрелка вниз + анимация*/
 /* .. ===  <!--первый экран--> ===*/
 
@@ -267,9 +308,11 @@ h2 {
 .advantages {
     padding: 89px 0 97px 0;
 }
+
 .advantages__title {
     margin-bottom: 63px;
 }
+
 /* .. общие настройки секции + заголовок*/
 /*список преимуществ*/
 .advantages__list {
@@ -277,6 +320,7 @@ h2 {
     column-gap: 28px;
     flex-wrap: wrap;
 }
+
 .advantages__item {
     max-width: 370px;
     text-align: center;
@@ -285,21 +329,25 @@ h2 {
 
     padding: 56px 30px 59px 30px;
 }
+
 .advantages__icon {
     position: relative;
     height: 78px;
     margin-bottom: 27px;
 }
+
 .advantages__icon img {
     position: absolute;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
 }
+
 .advantages__list-heading {
     font-size: 20px;
     margin-bottom: 19px;
 }
+
 .advantages__list-heading::after {
     content: '';
     display: block;
@@ -309,6 +357,7 @@ h2 {
     opacity: 0.19;
     margin: 16px auto 0 auto;
 }
+
 .advantages__description {
     height: 80px;
     font-size: 17px;
@@ -316,6 +365,7 @@ h2 {
     line-height: 1.294;
     text-align: center;
 }
+
 /* .. список преимуществ*/
 /* ..  === <!--секция 'преимущества'--> === */
 
@@ -325,6 +375,7 @@ h2 {
     padding: 95px 0 99px 0;
     background-image: url("../img/moving-bg.png");
 }
+
 .moving-offer::before {
     content: '';
     position: absolute;
@@ -335,6 +386,7 @@ h2 {
     background-color: #0e2a41;
     opacity: 0.859;
 }
+
 /* .. общие настройки секции*/
 /*основной контент секции*/
 .moving-wrapper {
@@ -342,30 +394,37 @@ h2 {
     z-index: 10;
     text-align: center;
 }
+
 .moving-offer__header {
     margin-bottom: 57px;
     text-align: center;
 }
+
 .moving-offer__title {
     margin-bottom: 29px;
 }
+
 .moving-offer__quote {
     max-width: 450px;
     margin: 0 auto;
 }
+
 .blockquote__quote {
     margin-bottom: 17px;
 }
+
 .blockquote__text {
     font-size: 18px;
     font-style: italic;
     line-height: 1.444;
 }
+
 .blockquote__author {
     font-size: 14px;
     font-weight: 900;
     text-transform: uppercase;
 }
+
 .moving-offer__question {
     max-width: 770px;
     margin: 0 auto;
@@ -373,6 +432,7 @@ h2 {
     padding: 60px;
     position: relative;
 }
+
 .moving-offer__question::before, .moving-offer__question::after {
     content: '';
     display: block;
@@ -383,12 +443,15 @@ h2 {
     left: 50%;
     transform: translateX(-50%);
 }
+
 .moving-offer__question::before {
     top: -17px;
 }
+
 .moving-offer__question::after {
     bottom: -17px;
 }
+
 .moving-offer__text {
     max-width: 665px;
     font-size: 19px;
@@ -396,25 +459,31 @@ h2 {
     line-height: 1.842;
     text-align: center;
 }
+
 .moving-offer__text_main {
     font-weight: 900;
     font-size: 23px;
 }
+
 .moving-offer__answer {
     margin-top: 71px;
 }
+
 .moving-offer__answer-text {
     margin-bottom: 48px;
 }
+
 .moving-offer__heading {
     font-size: 37px;
     text-transform: uppercase;
     font-weight: 900;
     margin-bottom: 10px;
 }
+
 .moving-offer__desc {
     font-size: 18px;
 }
+
 /* .. основной контент секции*/
 /* ..  === <!--секция 'переезд в болгарию'--> === */
 
@@ -428,6 +497,7 @@ h2 {
     background-repeat: no-repeat;
     text-align: center;
 }
+
 /* .. общие настройки секции*/
 /*обертка основного контента*/
 .estate__content {
@@ -435,7 +505,63 @@ h2 {
     max-width: 770px;
     margin: 151px auto 60px auto;
 }
-.estate__content::after {
+
+/* .. обертка основного контента*/
+/*декоративные картинки секции*/
+.estate__images-01, .estate__images-02, .estate__images-03 {
+    position: absolute;
+    transform: translateX(-50%);
+}
+
+.estate__images-01 {
+    top: -125px;
+    left: 51%;
+}
+
+.estate__images-02 {
+    left: 38%;
+    top: -74px;
+    z-index: -5;
+}
+
+.estate__images-03 {
+    left: 60%;
+    top: -55px;
+    z-index: -5;
+}
+
+/* .. декоративные картинки секции*/
+/*блоки с текстом*/
+.text-block {
+    background-color: #f4f4f4;
+    box-shadow: 1px 1.732px 4px 0px rgba(149, 147, 147, 0.33);
+}
+
+.text-block + .text-block {
+    margin-top: 6px;
+}
+
+.text-block__title {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.text-block__text {
+    font-size: 17px;
+    line-height: 1.25;
+}
+
+.text-block_top {
+    padding: 71px 35px 43px 35px;
+}
+
+.text-block_bottom {
+    padding: 44px 35px 39px 35px;
+    position: relative;
+}
+
+.text-block_bottom::before {
     content: '';
     display: block;
     width: 60px;
@@ -445,54 +571,11 @@ h2 {
     background-position: center;
     background-size: contain;
     position: absolute;
-    bottom: 142px;
+    top: -30px;
     left: 50%;
     transform: translateX(-50%);
 }
-/* .. обертка основного контента*/
-/*декоративные картинки секции*/
-.estate__images-01, .estate__images-02, .estate__images-03 {
-    position: absolute;
-    transform: translateX(-50%);
-}
-.estate__images-01 {
-    top: -125px;
-    left: 51%;
-}
-.estate__images-02 {
-    left: 38%;
-    top: -74px;
-    z-index: -5;
-}
-.estate__images-03 {
-    left: 60%;
-    top: -55px;
-    z-index: -5;
-}
-/* .. декоративные картинки секции*/
-/*блоки с текстом*/
-.text-block {
-    background-color: #f4f4f4;
-    box-shadow: 1px 1.732px 4px 0px rgba(149, 147, 147, 0.33);
-}
-.text-block + .text-block {
-    margin-top: 6px;
-}
-.text-block__title {
-    font-size: 20px;
-    text-align: center;
-    margin-bottom: 16px;
-}
-.text-block__text {
-    font-size: 17px;
-    line-height: 1.25;
-}
-.text-block_top {
-    padding: 71px 35px 43px 35px;
-}
-.text-block_bottom {
-    padding: 44px 35px 39px 35px;
-}
+
 /* .. блоки с текстом*/
 /* .. === <!--секция 'недвижимость'--> === */
 
@@ -501,9 +584,11 @@ h2 {
 .review {
     padding: 89px 0;
 }
+
 .review__title {
     margin-bottom: 68px;
 }
+
 .slider__slide {
     background-color: var(--light-text-color);
     box-shadow: 1px 1.732px 4px 0 rgba(149, 147, 147, 0.33);
@@ -513,6 +598,7 @@ h2 {
 
     /*height: 205px;*/
 }
+
 .slider__image {
     border-radius: 50px;
     overflow: hidden;
@@ -523,37 +609,46 @@ h2 {
     transform: translateY(-50%);
     left: -62px;
 }
+
 .slider__info {
     text-transform: uppercase;
     margin-bottom: 27px;
 }
+
 h3.slider__author {
     font-size: 16px;
 }
+
 .slider__link, .slider__direction {
     color: var(--accent-ui-color);
     font-size: 12px;
 }
+
 .slider__link {
     border-bottom: 1px solid var(--accent-ui-color);
     font-weight: 900;
 }
+
 .slider__direction {
     font-size: 12px;
 }
+
 .slider__text {
     font-size: 14px;
     color: #363636;
     font-style: italic;
     line-height: 1.429;
 }
+
 .bullets {
     width: 78px;
     margin: 51px auto 0 auto;
 }
+
 .slider__bullets {
     column-gap: 10px;
 }
+
 .slider__bullet {
     width: 19px;
     height: 19px;
@@ -561,10 +656,12 @@ h3.slider__author {
     border-radius: 50%;
     transition: var(--hover-transition);
 }
+
 .slider__bullet:hover {
     border: 1px solid var(--accent-ui-color);
     background-color: var(--accent-ui-color);
 }
+
 /* .. болванка-прототип слайдера*/
 /* .. === <!--секция 'отзывы'--> === */
 
@@ -577,13 +674,16 @@ h3.slider__author {
     background-repeat: no-repeat;
     background-position: center;
 }
+
 .consultation__header {
     margin-bottom: 30px;
 }
+
 .consultation__title {
     line-height: 1.2;
     margin-bottom: 27px;
 }
+
 .consultation__text {
     font-size: 21px;
     text-transform: uppercase;
@@ -593,9 +693,11 @@ h3.slider__author {
     line-height: 1.4;
     letter-spacing: 0.05em;
 }
+
 .page-html__consultation__text {
     max-width: 330px;
 }
+
 .consultatiion__decor {
     width: 33px;
     height: 33px;
@@ -606,13 +708,16 @@ h2.page-block__consultation__title {
     font-size: 25px;
     margin-bottom: 17px;
 }
+
 h2.page-block__consultation__title span {
     font-size: 20px;
 }
+
 .page-block__consultation__text {
     font-size: 18px;
     width: 258px;
 }
+
 /* .. общие настройки секции + заголовок*/
 /*форма заявки на консультацию*/
 form.consultation__form {
@@ -623,6 +728,7 @@ form.consultation__form {
     justify-content: center;
     align-items: center;
 }
+
 form input {
     border: 1px solid var(--light-text-color);
     border-radius: 3px;
@@ -635,22 +741,27 @@ form input {
     padding: 35px;
     transition: var(--hover-transition);
 }
+
 form input::placeholder {
     font-weight: 100;
     color: var(--light-text-color);
     opacity: 0.56;
     transition: var(--hover-transition);
 }
+
 form input:hover {
     box-shadow: 0px 0px 35px 0px rgba(14, 14, 14, 0.3);
 }
+
 form input:hover::placeholder {
     opacity: 1;
 }
+
 button.consultation-btn {
     width: 370px;
     margin-top: 11px;
 }
+
 .block-page__block_form {
     width: 389px;
     background-color: var(--accent-ui-color);
@@ -658,17 +769,21 @@ button.consultation-btn {
     color: var(--light-text-color);
     border-radius: 3px;
 }
+
 form input.page-block__input, button.page-block__consultation-btn {
     width: 292px;
     height: 53px;
     padding: 19px;
 }
+
 form input.page-block__input {
     background-color: #30c2ff;
 }
+
 button.page-block__consultation-btn {
     font-size: 13px;
 }
+
 /* .. форма заявки на консультацию*/
 /* .. === <!--секция 'запись на консультацию'--> === */
 
@@ -677,25 +792,30 @@ button.page-block__consultation-btn {
     padding: 11px 0;
     box-shadow: 0 13px 131px 0 rgba(0, 0, 0, 0.26);
 }
+
 .footer__credits {
     font-size: 14px;
     color: var(--footer-text-color);
     column-gap: 120px;
 }
+
 .footer__rights, .footer__agreement {
     opacity: 0.76;
 }
+
 .footer__agreement {
     cursor: pointer;
     border-bottom: 1px dotted var(--footer-text-color);
 
     transition: var(--hover-transition);
 }
+
 .footer__agreement:hover {
     color: var(--light-text-color);
     border-bottom-color: var(--light-text-color);
     opacity: 1;
 }
+
 /* .. === <!--подвал сайта--> === */
 
 /*---------------------------------------*/
@@ -705,6 +825,7 @@ button.page-block__consultation-btn {
     background-color: var(--pages-section-bg);
     position: relative;
 }
+
 .page-block__about {
     height: 1110px;
 }
@@ -712,6 +833,7 @@ button.page-block__consultation-btn {
 .page-block__move {
     height: 682px;
 }
+
 .page-block__contacts {
     height: 656px;
 }
@@ -804,6 +926,7 @@ h3.page-block__header {
     justify-content: space-evenly;
     column-gap: 20px;
 }
+
 .block-page__article {
     max-width: 400px;
 
@@ -811,6 +934,7 @@ h3.page-block__header {
     flex-direction: column;
     row-gap: 40px;
 }
+
 .block-page__article_top {
     row-gap: 100px;
 }
@@ -905,6 +1029,7 @@ h3.page-block__header {
 .burger-icon {
     display: none;
 }
+
 /* .. === бургер меню === */
 
 
