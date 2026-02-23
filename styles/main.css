@@ -613,6 +613,9 @@ h2 {
 .slider__info {
     text-transform: uppercase;
     margin-bottom: 27px;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 15px;
 }
 
 h3.slider__author {
