@@ -785,6 +785,7 @@ form input.page-block__input {
 
 button.page-block__consultation-btn {
     font-size: 13px;
+    width: 292px !important;
 }
 
 /* .. форма заявки на консультацию*/
@@ -992,6 +993,14 @@ h3.page-block__header {
 .partners__quote {
     height: 225px;
     overflow-y: hidden;
+}
+
+.page-block__contacts-wrapper {
+    padding: 0 20px;
+    justify-content: space-around;
+    column-gap: 30px;
+    flex-wrap: wrap;
+    row-gap: 66px;
 }
 
 .contacts__icon {

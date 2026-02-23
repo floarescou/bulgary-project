@@ -31,7 +31,7 @@
 
 
 @media screen and (max-width: 1045px) {
-    .page-block__about, .page-block__move {
+    .page-block__about, .page-block__move, .page-block__contacts {
         height: auto;
     }
 
@@ -175,6 +175,24 @@
         margin: 0 auto;
     }
 }
+
+@media screen and (max-width: 725px) {
+    .contacts__item {
+        flex-direction: column;
+        text-align: center;
+        row-gap: 25px;
+    }
+
+    .contacts__info {
+        margin: 0 auto;
+    }
+
+    .contacts__icon {
+        margin: 0 auto;
+    }
+
+}
+
 
 @media screen and (max-width: 724px) {
     .estate-offer {
@@ -431,12 +449,20 @@ h1.move-html__offer__title {
         font-size: 36px;
     }
 
+    .block-page__block_form {
+        width: 300px;
+    }
+    form input.page-block__input, button.page-block__consultation-btn {
+        width: 250px !important;
+    }
+
 }
 
 @media screen and (max-width: 345px) {
     .partners__quote {
         height: 388px;
     }
+
 }
 
 
